@@ -20,7 +20,7 @@ public class Consumer extends Thread {
                     consumidor.remove(0);
                     System.out.println("Consumir:");
                     try {
-                        sleep(100);
+                        sleep(10);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
 

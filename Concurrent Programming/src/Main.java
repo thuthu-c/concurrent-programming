@@ -1,12 +1,14 @@
-import java.util.ArrayList;
+import java.util.*;
+
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static  void main(String[] args) {
         ArrayList<Integer> produtores = new ArrayList<Integer>();
 
-        Productor produtor = new Productor(produtores);
-        Consumer consumidor = new Consumer(produtores);
-        Consumer consumidordois = new Consumer(produtores);
+        ProdutorSem produtor = new ProdutorSem(produtores);
+        ConsumidorSem consumidor = new ConsumidorSem(produtores);
+        ConsumidorSem consumidordois = new ConsumidorSem(produtores);
 
         produtor.start();
         consumidor.start();
