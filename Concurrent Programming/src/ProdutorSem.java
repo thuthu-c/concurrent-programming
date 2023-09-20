@@ -13,12 +13,12 @@ public class ProdutorSem extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < 60; i++) {
+        for (int i = 0; i < 1000; i++) {
             try {
                 semaforoprod.acquire();
                 produtos.add(1);
                 System.out.println("Produzir: " + i);
-                sleep(100);
+                sleep(1);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             } finally {

@@ -25,7 +25,7 @@ public class ConsumidorSem extends Thread {
 	                	   if(consumidor.size() > 0){
 	   	                    consumidor.remove(0);
 	   	                    System.out.println(this.nome + " está consumindo: " + i);
-	                	   }
+	                	   }else{System.out.println(this.nome + "não tem nada para consumir pois a lista está vazia!");}
 	                	   
 	                	   
 	             
